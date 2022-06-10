@@ -25,28 +25,33 @@ public class DialogManager : MonoBehaviour
     public IEnumerator ShowDialog(Dialog dialog)
     {
         yield return new WaitForEndOfFrame();
-        OnShowDialog?.Invoke();
+        GameController._instance.state = GameState.Dialog;
         this.dialog = dialog;
         dialogBox.SetActive(true);
         StartCoroutine(TypeDialog(dialog.Lines[0]));
     }
 
-    public void HandleUpdate()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !isTyping)
+        if (GameController._instance.state == GameState.Dialog)
         {
-            ++currentLine;
-            if (currentLine < dialog.Lines.Count)
+            if (Input.GetKeyUp(KeyCode.E) && !isTyping)
             {
-                StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
-            }
-            else
-            {
-                currentLine = 0; // Reset dial for next interaction
-                dialogBox.SetActive(false);
-                OnCloseDialog?.Invoke();
+                ++currentLine;
+                if (currentLine < dialog.Lines.Count)
+                {
+                    StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
+                }
+                else
+                {
+                    currentLine = 0; // Reset dial for next interaction
+                    dialogBox.SetActive(false);
+                    GameController._instance.state = GameState.FreeRoam;
+                }
             }
         }
+
+            
     }
     public IEnumerator TypeDialog(string line)
     {

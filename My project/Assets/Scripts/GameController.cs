@@ -6,10 +6,10 @@ public enum GameState { FreeRoam, Dialog }
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerController playerController;
-    GameState state;
-    private void Start()
+    public GameState state;
+    public void Start()
     {
-        DialogManager.Instance.OnShowDialog += () =>
+       /* DialogManager.Instance.OnShowDialog += () =>
         {
             state = GameState.Dialog;
         };
@@ -17,18 +17,25 @@ public class GameController : MonoBehaviour
         {
             if (state == GameState.Dialog)
                 state = GameState.FreeRoam;
-        };
+        };*/
     }
 
-    private void Update()
+    public static GameController _instance;
+
+    void Awake()
     {
-        if (state == GameState.FreeRoam)
+
+        if (_instance == null)
         {
-           playerController.HandleUpdate();
+
+            _instance = this;
+
+            //Rest of your Awake code
+
         }
-        else if (state == GameState.Dialog)
+        else
         {
-            DialogManager.Instance.HandleUpdate();
+            Destroy(this);
         }
     }
 }
