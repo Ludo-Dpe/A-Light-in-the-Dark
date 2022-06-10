@@ -10,36 +10,40 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
     private Animator animator;
+    const float offsetY = 0.3f;
     
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    public void HandleUpdate() 
+    public void Update() 
     {
-        if (!isMoving)
+        if (GameController._instance.state == GameState.FreeRoam)
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
-
-            if (input.x != 0) input.y = 0; //rm diagonale mvt
-
-            if (input != Vector2.zero)
+            if (!isMoving)
             {
-                animator.SetFloat("moveX", input.x);
-                animator.SetFloat("moveY", input.y);
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
 
-                if (IsWalkable(targetPos))
-                    StartCoroutine(Move(targetPos));
+                if (input.x != 0) input.y = 0; //rm diagonale mvt
+
+                if (input != Vector2.zero)
+                {
+                    animator.SetFloat("moveX", input.x);
+                    animator.SetFloat("moveY", input.y);
+                    var targetPos = transform.position;
+                    targetPos.x += input.x;
+                    targetPos.y += input.y;
+
+                    if (IsWalkable(targetPos))
+                        StartCoroutine(Move(targetPos));
+                }
             }
+            animator.SetBool("isMoving", isMoving);
+            if (Input.GetKeyDown(KeyCode.E))
+                Interact();
         }
-        animator.SetBool("isMoving", isMoving);
-        if (Input.GetKeyDown(KeyCode.E))
-            Interact();
     }
 
     void Interact()
@@ -66,6 +70,19 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
 
+    private void OnMoveOver()
+    {
+       var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
+       foreach (var collider in colliders)
+       {
+            var triggerable = collider.GetComponent<IPlayerTriggerable>();
+            if (triggerable != null)
+            {
+                triggerable.OnPlayerTriggered(this);
+                break;
+            }
+       }
+    }
     private bool IsWalkable(Vector3 targetPos)
     {
         if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactableLayer) != null)
@@ -74,5 +91,5 @@ public class PlayerController : MonoBehaviour
         }
         return true;
     }
-    // test
+ 
 }
