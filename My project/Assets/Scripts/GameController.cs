@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum GameState { FreeRoam, Dialog }
 public class GameController : MonoBehaviour
 {
+    public Text keyCounter;
+
     [SerializeField] PlayerController playerController;
     GameState state;
     private void Start()
@@ -30,5 +33,6 @@ public class GameController : MonoBehaviour
         {
             DialogManager.Instance.HandleUpdate();
         }
+        keyCounter.text = "Keys : " + Globals.keyCount;
     }
 }

@@ -53,3 +53,6 @@ TagManager:
   - name: key
     uniqueID: 396052043
     locked: 0
+  - name: texts
+    uniqueID: 4097783799
+    locked: 0
