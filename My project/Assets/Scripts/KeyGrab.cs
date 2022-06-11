@@ -12,9 +12,9 @@ public class KeyGrab : MonoBehaviour
             Globals.keyCount++;
         }
 
-        /*if (Globals.keyCount == 2)
+        if (Globals.keyCount == 2)
         {
-            GameManager.GetComponent<GameController>().EndGame();
-        }*/
+            Application.Quit();
+        }
     }
 }
