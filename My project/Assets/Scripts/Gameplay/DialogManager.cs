@@ -10,8 +10,6 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Text dialogText;
     [SerializeField] int lettersPerSecond;
 
-    public event Action OnShowDialog;
-    public event Action OnCloseDialog;
     public static DialogManager Instance { get; private set; }
 
     private void Awake()
