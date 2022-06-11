@@ -70,19 +70,19 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
 
-    /*private void OnMoveOver()
+    private void OnMoveOver()
     {
-       var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
-       foreach (var collider in colliders)
-       {
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
+        foreach (var collider in colliders)
+        {
             var triggerable = collider.GetComponent<IPlayerTriggerable>();
             if (triggerable != null)
             {
                 triggerable.OnPlayerTriggered(this);
                 break;
             }
-       }
-    }*/
+        }
+    }
     private bool IsWalkable(Vector3 targetPos)
     {
         if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactableLayer) != null)
