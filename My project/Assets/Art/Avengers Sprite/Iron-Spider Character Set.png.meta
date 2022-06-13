@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1566,8 +1566,8 @@ TextureImporter:
       Iron-Spider Character Set_39: 1382312896
       Iron-Spider Character Set_11: -471780223
       Iron-Spider Character Set_56: 1933273130
-      Iron-Spider Character Set_14: -1909794253
       Iron-Spider Character Set_2: 626926834
+      Iron-Spider Character Set_14: -1909794253
       Iron-Spider Character Set_7: 276514543
       Iron-Spider Character Set_62: -1939773610
       Iron-Spider Character Set_35: 451828610

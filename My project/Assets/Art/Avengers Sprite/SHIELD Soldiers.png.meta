@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1387,7 +1387,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       SHIELD Soldiers_24: 585553535
-      SHIELD Soldiers_54: 1356705802
       SHIELD Soldiers_15: -642537880
       SHIELD Soldiers_6: -1674274079
       SHIELD Soldiers_10: 2038359462
@@ -1443,8 +1442,9 @@ TextureImporter:
       SHIELD Soldiers_20: -612036288
       SHIELD Soldiers_44: 365012107
       SHIELD Soldiers_5: 1913587421
-      SHIELD Soldiers_39: 672479796
+      SHIELD Soldiers_54: 1356705802
       SHIELD Soldiers_47: -1971381194
+      SHIELD Soldiers_39: 672479796
       SHIELD Soldiers_38: -1765763069
   spritePackingTag: 
   pSDRemoveMatte: 0

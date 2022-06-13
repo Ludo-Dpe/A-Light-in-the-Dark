@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1575,7 +1575,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Loki Character Set_0: -662855281
+      Loki Character Set_35: -112719374
       Loki Character Set_25: 1150186783
       Loki Character Set_63: -2110509110
       Loki Character Set_29: -268793647
@@ -1643,7 +1643,7 @@ TextureImporter:
       Loki Character Set_17: 1675087542
       Loki Character Set_53: -57041814
       Loki Character Set_56: -1106289213
-      Loki Character Set_35: -112719374
+      Loki Character Set_0: -662855281
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

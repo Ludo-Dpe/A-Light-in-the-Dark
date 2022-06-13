@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2014,10 +2014,10 @@ TextureImporter:
       War Machine_73: -367564460
       War Machine_29: 956602779
       War Machine_61: 924933850
-      War Machine_58: 43434936
+      War Machine_55: 1830439207
       War Machine_46: -1137415043
       War Machine_85: -1689960805
-      War Machine_55: 1830439207
+      War Machine_58: 43434936
       War Machine_82: 951279787
       War Machine_47: 1942253388
       War Machine_50: 631444114

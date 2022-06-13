@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2058,8 +2058,8 @@ TextureImporter:
       Captain America Character Sheet 01_20: 900961081
       Captain America Character Sheet 01_89: -487320240
       Captain America Character Sheet 01_79: -958767561
-      Captain America Character Sheet 01_77: -1521259181
       Captain America Character Sheet 01_37: -1497332914
+      Captain America Character Sheet 01_77: -1521259181
       Captain America Character Sheet 01_67: 1285210983
       Captain America Character Sheet 01_5: -363346936
       Captain America Character Sheet 01_14: -2108943988

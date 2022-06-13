@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2007,10 +2007,10 @@ TextureImporter:
       Avengers Cast 02_35: -1559003765
       Avengers Cast 02_4: 1322637758
       Avengers Cast 02_39: -1698145164
-      Avengers Cast 02_13: -416074026
       Avengers Cast 02_83: -1724464357
-      Avengers Cast 02_17: 795270590
+      Avengers Cast 02_13: -416074026
       Avengers Cast 02_69: -1305366922
+      Avengers Cast 02_17: 795270590
       Avengers Cast 02_70: 858915310
       Avengers Cast 02_25: -1844375086
       Avengers Cast 02_41: 1815534705
@@ -2019,8 +2019,8 @@ TextureImporter:
       Avengers Cast 02_68: -1664072182
       Avengers Cast 02_45: 660496056
       Avengers Cast 02_22: -1500239864
-      Avengers Cast 02_0: 1954727880
       Avengers Cast 02_37: -1820677176
+      Avengers Cast 02_0: 1954727880
       Avengers Cast 02_48: -1029536078
       Avengers Cast 02_87: 1080799255
       Avengers Cast 02_61: -1139384448

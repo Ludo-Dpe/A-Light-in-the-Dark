@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2077,8 +2077,8 @@ TextureImporter:
       Spider-Man Villians_15: 438307277
       Spider-Man Villians_3: -1678904782
       Spider-Man Villians_18: -938042100
-      Spider-Man Villians_55: -744544692
       Spider-Man Villians_63: 260567935
+      Spider-Man Villians_55: -744544692
       Spider-Man Villians_56: -40002467
       Spider-Man Villians_44: -964927594
       Spider-Man Villians_87: 1619703586

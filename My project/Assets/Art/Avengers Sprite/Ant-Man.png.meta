@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1704,7 +1704,6 @@ TextureImporter:
       Ant-Man_46: 1330980077
       Ant-Man_40: 53075649
       Ant-Man_33: 941393335
-      Ant-Man_61: -1166765076
       Ant-Man_12: 395832330
       Ant-Man_37: -139593523
       Ant-Man_58: -625468376
@@ -1765,17 +1764,18 @@ TextureImporter:
       Ant-Man_23: -161550987
       Ant-Man_55: -1365547206
       Ant-Man_17: 2126310912
-      Ant-Man_26: 805150890
+      Ant-Man_61: -1166765076
       Ant-Man_25: -380653936
+      Ant-Man_26: 805150890
       Ant-Man_9: -1613728804
-      Ant-Man_22: -1222112330
       Ant-Man_24: -2014572881
+      Ant-Man_22: -1222112330
       Ant-Man_19: 566168402
       Ant-Man_2: -1437680718
-      Ant-Man_42: -104110491
       Ant-Man_35: 1442711593
-      Ant-Man_54: -1023534048
+      Ant-Man_42: -104110491
       Ant-Man_60: -1464951017
+      Ant-Man_54: -1023534048
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

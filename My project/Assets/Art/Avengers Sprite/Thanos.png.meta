@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1828,7 +1828,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Thanos_14: -25131460
-      Thanos_64: -1627738853
       Thanos_35: -1135735358
       Thanos_27: -1749675659
       Thanos_7: -1584813733
@@ -1857,6 +1856,7 @@ TextureImporter:
       Thanos_24: 1983626161
       Thanos_69: -149422451
       Thanos_77: -215377803
+      Thanos_53: 1965354447
       Thanos_41: 2134124040
       Thanos_16: -1051508974
       Thanos_38: -1446565349
@@ -1903,10 +1903,10 @@ TextureImporter:
       Thanos_46: -214445423
       Thanos_59: 1460614021
       Thanos_74: 2123925645
-      Thanos_48: -543371799
-      Thanos_53: 1965354447
-      Thanos_57: -1515149528
       Thanos_61: -761508113
+      Thanos_64: -1627738853
+      Thanos_57: -1515149528
+      Thanos_48: -543371799
       Thanos_26: 398419786
   spritePackingTag: 
   pSDRemoveMatte: 0

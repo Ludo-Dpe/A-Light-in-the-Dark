@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2245,8 +2245,8 @@ TextureImporter:
       Miles Morales 01_6: 1272763137
       Miles Morales 01_48: 962389082
       Miles Morales 01_5: 215185214
-      Miles Morales 01_23: -1353218061
       Miles Morales 01_77: 853160727
+      Miles Morales 01_23: -1353218061
       Miles Morales 01_29: 1453104582
       Miles Morales 01_83: -1703176374
       Miles Morales 01_88: -497293374
@@ -2284,8 +2284,8 @@ TextureImporter:
       Miles Morales 01_31: 1092970223
       Miles Morales 01_46: -149775769
       Miles Morales 01_3: -146077699
-      Miles Morales 01_50: 1453596233
       Miles Morales 01_71: -1030450778
+      Miles Morales 01_50: 1453596233
       Miles Morales 01_89: -979618554
       Miles Morales 01_54: 1790089897
       Miles Morales 01_92: 771110406
