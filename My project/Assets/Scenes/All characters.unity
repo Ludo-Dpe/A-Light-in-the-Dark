@@ -2050,6 +2050,7 @@ GameObject:
   - component: {fileID: 610344978}
   - component: {fileID: 610344977}
   - component: {fileID: 610344976}
+  - component: {fileID: 610344979}
   m_Layer: 0
   m_Name: Spider-Vilain
   m_TagString: Untagged
@@ -2144,6 +2145,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &610344979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610344975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f98ee74a6f9c46aeb7b3d1892d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &645386858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2499,7 @@ GameObject:
   - component: {fileID: 678765880}
   - component: {fileID: 678765879}
   - component: {fileID: 678765878}
+  - component: {fileID: 678765881}
   m_Layer: 0
   m_Name: Mysterio
   m_TagString: Untagged
@@ -2573,6 +2594,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678765881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678765877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f98ee74a6f9c46aeb7b3d1892d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &784226165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,6 +2624,7 @@ GameObject:
   - component: {fileID: 784226168}
   - component: {fileID: 784226167}
   - component: {fileID: 784226166}
+  - component: {fileID: 784226169}
   m_Layer: 0
   m_Name: Pfr-Banner
   m_TagString: Untagged
@@ -2678,6 +2719,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784226169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784226165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f98ee74a6f9c46aeb7b3d1892d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &798524276
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,6 +3206,7 @@ GameObject:
   - component: {fileID: 983669581}
   - component: {fileID: 983669580}
   - component: {fileID: 983669579}
+  - component: {fileID: 983669582}
   m_Layer: 0
   m_Name: Hulk
   m_TagString: Untagged
@@ -3240,6 +3301,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983669582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983669578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f98ee74a6f9c46aeb7b3d1892d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &987435707
 GameObject:
   m_ObjectHideFlags: 3
@@ -3774,6 +3854,7 @@ GameObject:
   - component: {fileID: 1122067640}
   - component: {fileID: 1122067639}
   - component: {fileID: 1122067638}
+  - component: {fileID: 1122067641}
   m_Layer: 0
   m_Name: Symbiote
   m_TagString: Untagged
@@ -3868,6 +3949,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1122067641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122067637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f98ee74a6f9c46aeb7b3d1892d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1156925245
 GameObject:
   m_ObjectHideFlags: 0
