@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 633fb71bada573e4186e2e1970aead82
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - roomInputField: {instanceID: 0}
+  - lobbyPanel: {instanceID: 0}
+  - roomPanel: {instanceID: 0}
+  - roomName: {instanceID: 0}
+  - roomItemPrefab: {fileID: -1089347657025783586, guid: 4c3d5c612723d0140b0f7386e3d8d0e6, type: 3}
+  - contentObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
