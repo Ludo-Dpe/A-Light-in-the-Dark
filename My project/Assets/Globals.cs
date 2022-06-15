@@ -5,4 +5,5 @@ using UnityEngine;
 public class Globals : MonoBehaviour
 {
     public static int keyCount = 0;
+    public static int countTime = 10;
 }
