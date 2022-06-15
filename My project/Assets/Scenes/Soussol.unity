@@ -1344,7 +1344,6 @@ GameObject:
   m_Component:
   - component: {fileID: 557167854}
   - component: {fileID: 557167853}
-  - component: {fileID: 557167852}
   - component: {fileID: 557167851}
   - component: {fileID: 557167850}
   m_Layer: 0
@@ -1391,19 +1390,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.08
---- !u!114 &557167852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557167849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cf59132f6a90d4f823813f986e2944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
 --- !u!212 &557167853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1937,7 +1923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.082353, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2661,7 +2647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f8b6c6353bef3438dc4389f5edc52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyCounter: {fileID: 2009986863}
+  stoneCounter: {fileID: 0}
   Menu_Canvas: {fileID: 907266975}
   playerController: {fileID: 571579066}
   state: 0

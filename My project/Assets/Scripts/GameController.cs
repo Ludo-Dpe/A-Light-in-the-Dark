@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public enum GameState { FreeRoam, Dialog }
 public class GameController : MonoBehaviour
 {
-    public Text keyCounter;
+    public Text stoneCounter;
 
     public Canvas Menu_Canvas;
 
@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
             isPaused = !isPaused;
             PauseGame();
         }
-        keyCounter.text = "Keys : " + Globals.keyCount;
+        stoneCounter.text = "INFINITY STONES : " + Globals.stoneCount;
     }
 
     public void PauseGame()

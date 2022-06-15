@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyGrab : MonoBehaviour
+public class StoneGrab : MonoBehaviour
 {
     public GameObject GameManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player") {
             Destroy(gameObject);
-            Globals.keyCount++;
+            Globals.stoneCount++;
         }
 
-        if (Globals.keyCount == 2)
+        if (Globals.stoneCount == 6)
         {
             Application.Quit();
         }
