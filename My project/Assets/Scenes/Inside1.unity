@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &285254163
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4010,7 +4010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &1101305336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4227,7 +4227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &1137029716
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4364,7 +4364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &1148133387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &1472297584
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5989,7 +5989,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.082353, y: 1}
+    m_SensorSize: {x: 2.4075344, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6962,7 +6962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49d40b2189274e4a9dfc842bf5483de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 245715729}
+  GameManager: {fileID: 0}
 --- !u!58 &2115487014
 CircleCollider2D:
   m_ObjectHideFlags: 0
