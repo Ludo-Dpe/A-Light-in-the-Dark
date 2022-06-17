@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4839151300075829755}
   - component: {fileID: 4839151300075829754}
   - component: {fileID: 4839151300075829753}
+  - component: {fileID: -8078024279262648903}
   m_Layer: 0
   m_Name: Spider-Vilain
   m_TagString: Player
@@ -232,3 +233,16 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
+--- !u!114 &-8078024279262648903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4839151300075829731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bf14f74a9f1e21c830110bc4e2c2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceMagnitude: 1

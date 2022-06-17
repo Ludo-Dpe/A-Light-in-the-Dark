@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2090754045211313662}
   - component: {fileID: 2090754045211313663}
   - component: {fileID: 2090754045211313660}
+  - component: {fileID: -6811786242691115067}
   m_Layer: 0
   m_Name: Ultron
   m_TagString: Player
@@ -232,3 +233,16 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
+--- !u!114 &-6811786242691115067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090754045211313654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bf14f74a9f1e21c830110bc4e2c2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceMagnitude: 1

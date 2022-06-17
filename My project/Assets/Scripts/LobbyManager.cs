@@ -46,7 +46,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.LoadLevel("Test2character");
+            PhotonNetwork.LoadLevel("Go_scene_final");
         }
     }
 
