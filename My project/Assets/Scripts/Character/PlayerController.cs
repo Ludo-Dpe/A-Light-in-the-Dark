@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
+
     }
 
     public void Update() 

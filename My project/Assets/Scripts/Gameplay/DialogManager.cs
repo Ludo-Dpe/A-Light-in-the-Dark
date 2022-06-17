@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class DialogManager : MonoBehaviour
 {
     [SerializeField] GameObject dialogBox;
     [SerializeField] Text dialogText;
     [SerializeField] int lettersPerSecond;
+    PhotonView view;
 
-/*    public event Action OnShowDialog;
-    public event Action OnCloseDialog;*/
+    /*    public event Action OnShowDialog;
+        public event Action OnCloseDialog;*/
     public static DialogManager Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+        view = GetComponent<PhotonView>();
     }
 
     Dialog dialog;
@@ -33,20 +36,24 @@ public class DialogManager : MonoBehaviour
 
     public void Update()
     {
-        if (GameController._instance.state == GameState.Dialog)
+        if (view.IsMine)
         {
-            if (Input.GetKeyUp(KeyCode.E) && !isTyping)
+
+            if (GameController._instance.state == GameState.Dialog)
             {
-                ++currentLine;
-                if (currentLine < dialog.Lines.Count)
+                if (Input.GetKeyUp(KeyCode.E) && !isTyping)
                 {
-                    StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
-                }
-                else
-                {
-                    currentLine = 0; // Reset dial for next interaction
-                    dialogBox.SetActive(false);
-                    GameController._instance.state = GameState.FreeRoam;
+                    ++currentLine;
+                    if (currentLine < dialog.Lines.Count)
+                    {
+                        StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
+                    }
+                    else
+                    {
+                        currentLine = 0; // Reset dial for next interaction
+                        dialogBox.SetActive(false);
+                        GameController._instance.state = GameState.FreeRoam;
+                    }
                 }
             }
         }
