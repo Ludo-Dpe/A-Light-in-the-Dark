@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,38 +12,44 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     private Animator animator;
     const float offsetY = 0.3f;
+    PhotonView view;
     
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        view = GetComponent<PhotonView>();
     }
 
     public void Update() 
     {
-        if (GameController._instance.state == GameState.FreeRoam)
+        if (view.IsMine)
         {
-            if (!isMoving)
+            if (GameController._instance.state == GameState.FreeRoam)
             {
-                input.x = Input.GetAxisRaw("Horizontal");
-                input.y = Input.GetAxisRaw("Vertical");
-
-                if (input.x != 0) input.y = 0; //rm diagonale mvt
-
-                if (input != Vector2.zero)
+                if (!isMoving)
                 {
-                    animator.SetFloat("moveX", input.x);
-                    animator.SetFloat("moveY", input.y);
-                    var targetPos = transform.position;
-                    targetPos.x += input.x;
-                    targetPos.y += input.y;
+                    input.x = Input.GetAxisRaw("Horizontal");
+                    input.y = Input.GetAxisRaw("Vertical");
 
-                    if (IsWalkable(targetPos))
-                        StartCoroutine(Move(targetPos));
+                    if (input.x != 0) input.y = 0; //rm diagonale mvt
+
+                    if (input != Vector2.zero)
+                    {
+                        animator.SetFloat("moveX", input.x);
+                        animator.SetFloat("moveY", input.y);
+                        var targetPos = transform.position;
+                        targetPos.x += input.x;
+                        targetPos.y += input.y;
+
+                        if (IsWalkable(targetPos))
+                            StartCoroutine(Move(targetPos));
+                    }
                 }
+                animator.SetBool("isMoving", isMoving);
+                if (Input.GetKeyDown(KeyCode.E))
+                    Interact();
+
             }
-            animator.SetBool("isMoving", isMoving);
-            if (Input.GetKeyDown(KeyCode.E))
-                Interact();
         }
     }
 

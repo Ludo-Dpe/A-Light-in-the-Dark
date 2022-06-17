@@ -9,7 +9,6 @@ public class ChangeCamera : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     bool switchPlayer = false;
-
     private void Start()
     {
         player2.GetComponent<PlayerController>().enabled = false;
@@ -38,5 +37,4 @@ public class ChangeCamera : MonoBehaviour
         virtualCamera.Follow = newTarget.transform;
         switchPlayer = !switchPlayer;
     }
-
 }
